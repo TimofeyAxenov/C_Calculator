@@ -58,9 +58,18 @@
                 case "^":
                     result = Math.Pow(num1, num2);
                     break;
-                    
+                default:
+                    Console.WriteLine("Введён неверный символ действия");
+                    continue;
             }
             Console.WriteLine(result);
+            Console.WriteLine("Вы хотите завершить программу? y/n");
+            string exit;
+            exit = Console.ReadLine();
+            if (exit == "y")
+            {
+                break;
+            }
         }
     }
 }
